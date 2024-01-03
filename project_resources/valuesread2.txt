@@ -1,0 +1,15 @@
+{
+    "name":"Nitin",
+    "age":"Nitin",
+    "class":"Nitin",
+    "phoneNumber":
+    {
+        "landline":"123123123",
+        "Mobile":
+        {
+            "firstNumber":"4324234",
+            "secondNumber":"8686868"
+        }
+    },
+    "hobbies":["dancing","singing","cricket","cooking"]
+}
