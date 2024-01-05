@@ -39,6 +39,15 @@ def properties4(**kargs):
         print("{} is {} years old".format(key,value))
 properties4(Nitin=7,sachin=9,pooja=8)
 
+"""args and kwargs both can be used as the argument of same function"""
+
+def myFunction(*args, **kwargs):
+    print("-----------Having args and kwargs both--------------")
+    print("these are args", args)
+    print("these are kwargs", kwargs)
+myFunction("nitin","kulshreshtha",age=24, myclass="fifth")
+
+
 
 
 
