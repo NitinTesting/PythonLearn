@@ -69,3 +69,76 @@ def findLargestNumber_sort(list):
 a = [1,4,55,6,32,2]
 findLargestNumber_forLoop(a)
 findLargestNumber_sort(a)
+
+"""Prime Numbers"""
+def isItPrime(num):
+    print("-------check if a number is prime--------")
+    if num > 1:
+        for i in range(2, int(num/2)+1):
+            if num%i == 0:
+                print("{} is not a prime number".format(num))
+                break
+        else:
+            print("{} is a prime number".format(num))
+    else:
+        print("{} is not prime number".format(num))
+isItPrime(5)
+
+def printAllPrimeNo(start, end):
+    print("----------print all prime number b/w required range------------")
+    list = []
+    for expNO in range(start,end + 1):
+        if expNO == 0 or expNO == 1:
+            continue
+        for i in range(2, int(expNO/2)+1):
+            if expNO%i == 0:
+                break
+        else:list.append(expNO)
+    return list
+
+print(printAllPrimeNo(1, 50))
+
+"""List"""
+def multiplyAllListno(list):
+    print("-------print all no. in the list--------")
+    ans = 1
+    for i in list:
+        ans = ans * i
+    return ans
+list_no = [10,4,6,3,2,9]
+ans = multiplyAllListno(list_no)
+print(ans)
+
+def smallestNo(list):
+    print("------print smallest number in the list---------")
+    min = list[0]
+    for i in list:
+        if min > i:
+            min = i
+    print("smallest number in the list is:{}".format(min))
+smallestNo(list_no)
+
+def confirmNoInList(list, no):
+    print("----to find if number is present in the list-----")
+    for i in list:
+        if i == no:
+            print("{} is present in the list".format(no))
+            break
+    else:
+        print("{} is not present in the list".format(no))
+confirmNoInList(list_no, 7)
+
+def isNumberOddOrEven(num):
+    print("------confirm even or odd--------")
+    if num%2 == 0:
+        print("{} no is even".format(num))
+    else:
+        print("{} no is odd".format(num))
+isNumberOddOrEven(8327492)
+
+
+
+
+
+
+
