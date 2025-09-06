@@ -3,7 +3,7 @@ def loud(text):
     return text.upper()
 def whisper(text):
     return text.lower()
-s = loud("Hello") #function as an opject
+s = loud("Hello I am nitin") #function as an opject
 print("-----function as a object ---------")
 print(s)
 def greatings(type, text):
